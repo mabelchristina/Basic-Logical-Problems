@@ -6,7 +6,7 @@ namespace BasicLogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +37,11 @@ namespace BasicLogicalPrograms
                 case 5:
                     CouponNumber coupon = new CouponNumber();
                     coupon.Coupon();
+                    break;
+                case 6:
+                    DaysOfWeek daysOfWeek = new DaysOfWeek();
+                    Console.WriteLine("Enter MM DD YYYY\n");
+                    daysOfWeek.Days(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
                     break;
             }
 

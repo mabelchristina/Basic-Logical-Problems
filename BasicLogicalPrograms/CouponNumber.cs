@@ -15,7 +15,7 @@ namespace BasicLogicalPrograms
             {
                 if (check == number)
                 {
-                    Console.WriteLine("Coupon number count is 1");
+                    Console.WriteLine("Coupon number count is 1");  
                     return;
                 }
                 count++;

@@ -6,7 +6,7 @@ namespace BasicLogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Fibonacci Series\n 2.Perfect Number");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -26,6 +26,10 @@ namespace BasicLogicalPrograms
                     else
                         Console.WriteLine("Given number is not perfect number");
                     break;
+                case 3:
+                    PrimeNumber primeNumber = new PrimeNumber();
+                    primeNumber.Prime(Convert.ToInt32(Console.ReadLine()));
+                    break; 
             }
 
         }

@@ -6,7 +6,7 @@ namespace BasicLogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -33,6 +33,10 @@ namespace BasicLogicalPrograms
                 case 4:
                     ReverseOfNumber reverseOfNumber = new ReverseOfNumber();
                     reverseOfNumber.Reverse();
+                    break;
+                case 5:
+                    CouponNumber coupon = new CouponNumber();
+                    coupon.Coupon();
                     break;
             }
 

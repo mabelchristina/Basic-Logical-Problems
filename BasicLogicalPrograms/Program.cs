@@ -6,7 +6,7 @@ namespace BasicLogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,7 +29,11 @@ namespace BasicLogicalPrograms
                 case 3:
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.Prime(Convert.ToInt32(Console.ReadLine()));
-                    break; 
+                    break;
+                case 4:
+                    ReverseOfNumber reverseOfNumber = new ReverseOfNumber();
+                    reverseOfNumber.Reverse();
+                    break;
             }
 
         }

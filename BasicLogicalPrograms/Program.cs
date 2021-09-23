@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n" +
-                "7.Temperature Conversion\n8.StopWatch\n");
+                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -53,7 +53,11 @@ namespace BasicLogicalPrograms
                     StopWatch stopWatch = new StopWatch();
                     stopWatch.Time();
                     break;
-
+                case 9:
+                    MonthlyPayment monthlyPayment = new MonthlyPayment();
+                    Console.WriteLine("Enter Principal\nYear\nRate\n");
+                    monthlyPayment.CalculateMonthlyPayment(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+                    break;
             }
         }
     }

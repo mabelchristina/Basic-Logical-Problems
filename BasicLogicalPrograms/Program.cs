@@ -46,21 +46,8 @@ namespace BasicLogicalPrograms
                     break;
                 case 7:
                     TemperatureConversion temp = new TemperatureConversion();
-                    System.Console.WriteLine("Please select anyone\n 1. From Celsius to Fahrenheit.\n2. From Fahrenheit to Celsius.");
-                    int choice = Convert.ToInt32(Console.ReadLine());
-                    switch (choice)
-                    {
-                        case 1:
-                            Console.WriteLine("Please enter the temperature in celsius");
-                            double faren = temp.CelsiusToFahrenheit(Convert.ToDouble(Console.ReadLine()));
-                            Console.WriteLine("Temperature in Fahrenheit:", faren);
-                            break;
-                        case 2:
-                            Console.WriteLine("Please enter the temperature in farenheit");
-                            double cel = temp.FahrenheitToCelsius(Convert.ToDouble(Console.ReadLine()));
-                            Console.WriteLine("Temperature in Fahrenheit:", cel);
-                            break;
-                    }
+                    Console.WriteLine("Enter the Temperature");
+                    temp.CalculateTempearture(Convert.ToInt32(Console.ReadLine()));
                     break;
                 case 8:
                     StopWatch stopWatch = new StopWatch();

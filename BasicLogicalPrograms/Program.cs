@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n" +
-                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment");
+                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n10.Vending Machine of Notes");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -57,6 +57,11 @@ namespace BasicLogicalPrograms
                     MonthlyPayment monthlyPayment = new MonthlyPayment();
                     Console.WriteLine("Enter Principal\nYear\nRate\n");
                     monthlyPayment.CalculateMonthlyPayment(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+                    break;
+                case 10:
+                    VendingMachineOfNotes vendingMachine = new VendingMachineOfNotes();
+                    Console.WriteLine("Enter the amount needed from Vending Machine\n");
+                    vendingMachine.Notes(Convert.ToInt32(Console.ReadLine()));
                     break;
             }
         }

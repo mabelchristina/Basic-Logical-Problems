@@ -29,7 +29,7 @@ namespace BasicLogicalPrograms
                     break;
                 case 3:
                     PrimeNumber primeNumber = new PrimeNumber();
-                    primeNumber.Prime(Convert.ToInt32(Console.ReadLine()));
+                    primeNumber.Prime();
                     break;
                 case 4:
                     ReverseOfNumber reverseOfNumber = new ReverseOfNumber();

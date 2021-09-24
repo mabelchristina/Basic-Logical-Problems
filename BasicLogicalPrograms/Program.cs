@@ -6,8 +6,10 @@ namespace BasicLogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n" +
-                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n10.Vending Machine of Notes\n11.Square Root \n12.Decimal to Binary\n");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n" +
+                " 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n" +
+                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n" +
+                "10.Vending Machine of Notes\n11.Square Root \n12.Decimal to Binary\n13.Swap Nibble\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -72,6 +74,11 @@ namespace BasicLogicalPrograms
                     DecimalToBinary decimalToBinary = new DecimalToBinary();
                     Console.WriteLine("Enter a decimal number");
                     decimalToBinary.decToBinary(Convert.ToInt32(Console.ReadLine()));
+                    break;
+                case 13:
+                    SwapNibble swapNibble = new SwapNibble();
+                    Console.WriteLine("Enter a decimal Number");
+                    swapNibble.CalSwapNibbles(Convert.ToInt32(Console.ReadLine()));
                     break;
             }
         }

@@ -6,20 +6,30 @@ namespace BasicLogicalPrograms
 {
     class PrimeNumber
     {
-        public void Prime(int n)
+        public void Prime()
         {
-            int a = 0;
-            for (int i = 1; i <= n; i++)
+            Console.Write("Enter The Start Number: ");
+            int startNumber = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the End Number : ");
+            int endNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The Prime Numbers between" +startNumber+"and" +endNumber+ "are : ");
+            for (int i = startNumber; i <= endNumber; i++)
             {
-                if (n % i == 0)
+                int count = 0;
+                for (int j = 2; j <= i / 2; j++)
                 {
-                    a++;
+                    if (i % j == 0)
+                    {
+                        count++;
+                        break;
+                    }
+                }
+
+                if (count == 0 && i != 1)
+                {
+                    Console.Write(i+"\n");
                 }
             }
-            if (a == 2)
-                Console.WriteLine("Given number is prime", n);
-            else
-                Console.WriteLine("Not a Prime Number");
         }
     }
 }

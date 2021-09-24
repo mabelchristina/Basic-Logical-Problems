@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n" +
-                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n10.Vending Machine of Notes");
+                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n10.Vending Machine of Notes\n11.Square Root");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,7 +29,7 @@ namespace BasicLogicalPrograms
                     break;
                 case 3:
                     PrimeNumber primeNumber = new PrimeNumber();
-                    primeNumber.Prime(Convert.ToInt32(Console.ReadLine()));
+                    primeNumber.Prime();
                     break;
                 case 4:
                     ReverseOfNumber reverseOfNumber = new ReverseOfNumber();
@@ -63,6 +63,11 @@ namespace BasicLogicalPrograms
                     Console.WriteLine("Enter the amount needed from Vending Machine\n");
                     vendingMachine.Notes(Convert.ToInt32(Console.ReadLine()));
                     break;
+                case 11:
+                    SquareRoot squareRoot = new SquareRoot();
+                    Console.WriteLine("Enter a number to find square root");
+                    squareRoot.CalSquareRoot(Convert.ToDouble(Console.ReadLine()));
+                    break;        
             }
         }
     }

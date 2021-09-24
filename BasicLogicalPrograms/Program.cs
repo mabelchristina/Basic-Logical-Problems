@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n 4.Reverse of Number\n5.Coupon Number\n6.DaysofWeek\n" +
-                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n10.Vending Machine of Notes\n11.Square Root");
+                "7.Temperature Conversion\n8.StopWatch\n9.Monthly Payment\n10.Vending Machine of Notes\n11.Square Root \n12.Decimal to Binary\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -67,7 +67,12 @@ namespace BasicLogicalPrograms
                     SquareRoot squareRoot = new SquareRoot();
                     Console.WriteLine("Enter a number to find square root");
                     squareRoot.CalSquareRoot(Convert.ToDouble(Console.ReadLine()));
-                    break;        
+                    break;
+                case 12:
+                    DecimalToBinary decimalToBinary = new DecimalToBinary();
+                    Console.WriteLine("Enter a decimal number");
+                    decimalToBinary.decToBinary(Convert.ToInt32(Console.ReadLine()));
+                    break;
             }
         }
     }
